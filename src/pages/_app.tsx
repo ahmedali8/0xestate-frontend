@@ -15,6 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<WagmiConfig client={client}>
 			<ConnectKitProvider>
+				
 				<Component {...pageProps} />
 			</ConnectKitProvider>
 		</WagmiConfig>

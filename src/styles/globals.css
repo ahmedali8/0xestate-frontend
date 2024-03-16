@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -24,4 +24,85 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+} */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0; /* Text color */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; /* Text color for dark mode */
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: white; /* Set white background */
+  position: relative; /* Enable positioning for corner images */
+}
+
+.corner-image {
+  position: absolute; /* Position images absolutely */
+  top: 0; /* Align top edge with body */
+  width: 100px; /* Set image width */
+  height: 100px; /* Set image height */
+  object-fit: cover; /* Scale image to fit within dimensions */
+}
+
+.sc-kCvKRn {
+  background-color: #2980b9 !important;  /* Adjust to your desired blue shade */
+  width: 100% !important;
+  height: 50px !important;
+  color: white !important;
+  padding: 1rem 2rem !important; /* Adjust padding values as needed */
+  border-radius: 6px !important;  /* Adjust corner radius value */
+  transition: background-color 0.2s ease-in-out !important; /* Add hover effect */
+}
+
+.sc-kCvKRn :hover {
+  background-color: #1775b4 !important;  /* Adjust hover background color */
+}
+
+.corner-images {
+  position: relative; /* Enable positioning for corner images */
+  width: 100%; /* Span the full width */
+  height: 100%; /* Span the full height */
+}
+
+.corner-image {
+  position: absolute; /* Position images absolutely */
+  width: 100px; /* Adjust image width as needed */
+  height: 100px; /* Adjust image height as needed */
+  object-fit: cover; /* Scale images to fit within dimensions */
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+.heading{
+  color: black !important;
+}
+.verify-btn{
+  color: black;
 }
