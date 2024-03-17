@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/lib/nouns-dao.mjs", "src/lib/nouns-dao.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/lib/nouns-dao.mjs", "src/lib/nouns-dao.js", "src/lib/Modal.tsx"],
   "exclude": ["node_modules"]
 }

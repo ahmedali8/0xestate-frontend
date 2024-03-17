@@ -8,20 +8,9 @@ import { useAccount, useContractWrite, usePrepareContractWrite } from 'wagmi'
 import PropertyList from './property_list'
 import img1 from "../images/img1.png"
 import Image from 'next/image'
-import { ConnectKitProvider, getDefaultClient } from 'connectkit'
-import { WagmiConfig, createClient } from 'wagmi'
-import { APP_NAME } from '@/lib/consts'
 import axios from 'axios'
 import Header from './header'
 
-
-
-const client = createClient(
-	getDefaultClient({
-		appName: APP_NAME,
-		infuraId: process.env.INFURA_ID,
-	})
-)
 export default function Home() {
 
 	const { address } = useAccount()

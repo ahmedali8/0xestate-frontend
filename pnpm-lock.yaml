@@ -92,6 +92,9 @@ dependencies:
   tailwindcss:
     specifier: 3.3.2
     version: 3.3.2
+  tw-elements:
+    specifier: ^2.0.0
+    version: 2.0.0
   typescript:
     specifier: 5.0.4
     version: 5.0.4
@@ -9068,6 +9071,10 @@ packages:
     dependencies:
       tslib: 1.14.1
       typescript: 5.0.4
+    dev: false
+
+  /tw-elements@2.0.0:
+    resolution: {integrity: sha512-aiitkqzmCZIZ9zJr3V6ErVzU/CrKoAkptpv94t0pEKnVn2Ah4jOplXOO/v6Fo9jr3PoTA5dxvlyS4w8rnW/iag==}
     dev: false
 
   /type-check@0.4.0:
