@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Image1 from "../images/img1.png"
 import Image2 from "../images/img2.png"
 import Image3 from "../images/img3.png"
+import Header from './header';
 const cardsData = [
     {
         imageSrc: Image1,
@@ -23,10 +24,10 @@ const cardsData = [
 
 const PropertyList = () => {
     return (
-
-        <div className="container my-12 mx-auto px-4 md:px-12">
-            <div className="flex flex-wrap -mx-1 lg:-mx-4">
-                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+        <>
+        <div className="container my-12 mx-24 px-9 md:px-0 ">
+            <div className="flex flex-wrap -mx-1 lg:-mx-4 gap-1 ">
+                <div className="gap-0 my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 bg-white bg-opacity-90">
                     <article className="overflow-hidden rounded-lg shadow-lg">
                         <a href="#">
                             <Image alt="Placeholder" width={720}
@@ -61,7 +62,7 @@ const PropertyList = () => {
                     </article>
 
                 </div>
-                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 bg-white bg-opacity-90" >
 
                     <article className="overflow-hidden rounded-lg shadow-lg">
 
@@ -96,7 +97,7 @@ const PropertyList = () => {
 
                     </article>
                 </div>
-                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 bg-white bg-opacity-90">
 
                     <article className="overflow-hidden rounded-lg shadow-lg">
 
@@ -133,7 +134,7 @@ const PropertyList = () => {
                     </article>
 
                 </div>
-                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 bg-white bg-opacity-90">
 
                     <article className="overflow-hidden rounded-lg shadow-lg">
 
@@ -171,7 +172,7 @@ const PropertyList = () => {
 
 
                 </div>
-                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 bg-white bg-opacity-90">
 
 
                     <article className="overflow-hidden rounded-lg shadow-lg">
@@ -209,7 +210,7 @@ const PropertyList = () => {
                     </article>
 
                 </div>
-                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4">
+                <div className="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/4 bg-white bg-opacity-90">
                     <article className="overflow-hidden rounded-lg shadow-lg">
 
                         <a href="#">
@@ -247,6 +248,7 @@ const PropertyList = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

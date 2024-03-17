@@ -41,8 +41,10 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: white; /* Set white background */
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background-color: white; */
+   /* Set white background */
+  background-image: url("../../collage.png");
   position: relative; /* Enable positioning for corner images */
 }
 
@@ -105,4 +107,9 @@ body {
 }
 .verify-btn{
   color: black;
+}
+.container-landing{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
 }
